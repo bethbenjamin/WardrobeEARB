@@ -4,63 +4,46 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Review your Tops in Detail</h2>
 
-<div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+<hr />
+<div class=" col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <div class="caption" align="Left">
+            
+            <p>
+                <b>@Html.DisplayFor(model => model.Name)</b><br />
+                <img src="@Html.DisplayFor(model => model.Photo)" height="350px" width=" 300px" /><br />
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+                @Html.DisplayNameFor(model => model.Color):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+                @Html.DisplayFor(model => model.Color)<br />
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+                @Html.DisplayNameFor(model => model.Season):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
+                @Html.DisplayFor(model => model.Season)<br />
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
+                @Html.DisplayNameFor(model => model.Occasion):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
+                @Html.DisplayFor(model => model.Occasion)<br />
 
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
+                @Html.DisplayNameFor(model => model.Type):
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
+                @Html.DisplayFor(model => model.Type)<br />
 
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
 
-    </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        <div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>

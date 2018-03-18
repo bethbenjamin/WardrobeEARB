@@ -202,8 +202,11 @@
     <Content Include="Content\images\acc5.jpeg" />
     <Content Include="Content\images\acc6.jpeg" />
     <Content Include="Content\images\acc7.jpeg" />
+    <Content Include="Content\images\headerimg.gif" />
+    <Content Include="Content\images\men.gif" />
     <Content Include="Content\images\maleoutline.jpg" />
     <Content Include="Content\images\mencloset.jpg" />
+    <Content Include="Content\images\movingcoat.gif" />
     <Content Include="Content\images\pants1.jpeg" />
     <Content Include="Content\images\pants2.jpeg" />
     <Content Include="Content\images\pants3.jpeg" />

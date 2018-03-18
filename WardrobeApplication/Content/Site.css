@@ -1,21 +1,73 @@
-﻿
+﻿{
+    box-sizing: border-box;
+}
+
+.zoom {
+    padding: 0px;
+    background-color: transparent;
+    transition: transform .2s;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+    .zoom:hover {
+        -ms-transform: scale(1.8); /* IE 9 */
+        -webkit-transform: scale(1.8); /* Safari 3-8 */
+        transform: scale(1.8);
+    }
+
+
+
+
+
+
+.btn-primary {
+    color: black;
+    text-shadow: 2px 2px 2px gray;
+    
+    box-shadow: 0 0 1px 1px white;
+    background-color: #cedef3;
+    border-color: #cedef3;
+}
 
 .jumbotron {
     background-size: cover;
-    background-image: url('images/mencloset.jpg');
+    background-image: url('images/movingcoat.gif');
     color: white;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    height: 400px;
     /*position: absolute;
     width: 100%;
     margin: 0px;
     padding: 0px;
     height: 270px;*/
 }
+
 .navbar-inverse {
-    background-color: #151515;
+    background-color: #cedef3;
+    border-bottom: none;
 }
+
     .navbar-inverse .navbar-nav > li > a {
-        color: white;
+        color: black;
     }
+   
+
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:blue;
+}
+
+
+    a:hover {
+    color: black;
+}
+   
 
 body {
     padding-top: 50px;

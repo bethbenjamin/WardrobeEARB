@@ -7,50 +7,27 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Accessory</h4>
+    <h4>Bottom</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+    <b>  @Html.DisplayFor(model => model.Name)</b><br />
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+    <img src="@Html.DisplayFor(model => model.Photo)" height="360px" width=" 300px" /><br />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+    @Html.DisplayNameFor(model => model.Color):
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+    @Html.DisplayFor(model => model.Color)<br />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
+    @Html.DisplayNameFor(model => model.Season):
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
+    @Html.DisplayFor(model => model.Season)<br />
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
+    @Html.DisplayNameFor(model => model.Occasion):
 
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
+    @Html.DisplayFor(model => model.Occasion)<br />
 
-    </dl>
+  
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
